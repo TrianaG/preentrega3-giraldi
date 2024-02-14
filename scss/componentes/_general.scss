@@ -1,0 +1,95 @@
+/* Tipografías */
+@font-face {
+    font-family: "Genty";
+    src: url(../fonts/GENTYDEMO-REGULAR.OTF);
+    }
+
+@font-face {
+    font-family: "Bebas";
+    src: url(../fonts/BEBASNEUE-REGULAR.OTF);
+    }
+
+
+/* Configuración para toda la página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #FFF9A5;
+    text-align: center;
+}
+
+.imagen_adaptada{
+    width: 100vw;
+}
+
+.cuadrado_rojo{
+    background-color: #F15025;
+    color: #FFF9A5;
+    font-family: "Bebas";
+    list-style: none;
+    padding: 2%;
+}
+
+.cuadrado_azul{
+    background-color:#00A7E1;
+    color: #FFF9A5;
+    font-family: "Bebas";
+    list-style: none;
+    padding: 2%;
+}
+
+.cuadrado_amarillo{
+    background-color:#FFF9A5;
+    font-family: "Bebas";
+    list-style: none;
+    padding: 2%;
+}
+
+.letra_receta_azul{
+    color: #00A7E1;
+    font-family: "Bebas";
+}
+
+.letra_receta_rojo{
+    color:#F15025;
+    font-family: "Bebas";  
+}
+
+.letra_receta_amarillo{
+    color:#FFF9A5;
+    font-family: "Bebas";
+}
+
+.titulo_recetas_rojo{
+    font-family: "Genty";
+    color: #F15025;
+}
+
+.titulo_recetas_azul{
+    font-family: "Genty";
+    color: #00A7E1;    
+}
+
+/* Configuraciones estéticas para los links*/
+a{
+    outline: none;
+    text-decoration: none;
+    }
+
+a:visited{
+    color:#FFF9A5;
+}
+
+a:focus{
+    color:#00A7E1;
+}
+
+a:active{
+    color: #00A7E1;
+}
+

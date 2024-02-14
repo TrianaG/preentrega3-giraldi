@@ -1,0 +1,21 @@
+// Importo los aspectos generales de la página //
+
+@import "./componentes/general";
+
+// Importo el header //
+
+@import "./componentes/header";
+
+// Importo el footer //
+
+@import "./componentes/footer";
+
+/*--------------------------------------- Configuración de cada página ------------------------------------------*/
+
+@import "./componentes/index";
+@import "./componentes/basicos";
+@import "./componentes/recetas";
+@import "./componentes/donde_comer";
+@import "./componentes/sobre_mi";
+
+/*---------------------------------------------------------------------------------------------------------------*/

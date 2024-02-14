@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sur Empanadas | ¿Dónde comer?</title>
+    <meta name="description" content="Si te tentaste pero no querés cocinar en esta página te dejo mis lugares favoritos para comer empanadas en CABA">
+    <meta name="keywords" content="restaurant, restaurant de empanadas, empanaderia, restaurant caba, empanadas buenos aires, comer empanadas, casa de empanadas, empanadas caba, empanadas buenos aires, empanadas capital federal">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/4.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+<!-- Armo el menú con las clases de Bootstrap. Incluyo un navbar que se mostrará solamente en pantallas mobile y tablet. En pantallas más grandes se mostrará otro menú -->
+<header>
+    <nav class="menu_mobile">
+        <nav class="navbar navbar-expand-lg d-lg-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="./basicos.html">Básicos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./recetas.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-center subrayado" href="./donde_comer.html">¿Dónde comer?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./sobre_mi.html">Sobre Mí</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+    <nav>
+        <a class="navbar-brand abs-center mx-auto d-lg-none" href="../index.html"><img src="../img/logo_menu2.png" alt="logo_menu" width="30" height="24"></a>
+    </nav>
+    <nav class="menu_desktop">
+        <nav class="container-fluid text-center d-none d-lg-block">
+            <div class="row">
+                    <div class="col align-self-center">
+                        <a href="./basicos.html">Básicos</a>
+                    </div>
+                    <div class="recetas_menu col align-self-center">
+                        <a href="./recetas.html">Recetas</a>
+                    </div>
+                    <nav class="col">
+                        <a href="../index.html"><img src="../img/logo_menu2.png" alt="logo_menu"></a>
+                    </nav>
+                    <div class="donde_comer_menu col align-self-center">
+                        <a class="text-center subrayado" href="./donde_comer.html">¿Dónde comer?</a>
+                    </div>
+                    <div class="sobre_mi_menu col align-self-center">
+                        <a href="./sobre_mi.html">Sobre mí</a>
+                    </div>
+            </div>
+        </nav>
+    </nav>
+</header>
+
+
+    <main>
+        <nav class="portada_mobile_donde">
+            <figure class="configuracion_desktop_recetas">
+                <div><img class="imagen_adaptada" src="../img/portada_recetas_mobile.png" alt="portada_recetas_mobile"></div>
+                <figcaption class="textos_portada_recetas">
+                    <div><h1 class="titulo_recetas">¿Te tentaste?</h1></div>
+                    <div><h2 class="subtitulo_recetas">Te dejo un mapa con mis lugares favoritos de CABA</h2></div>
+                </figcaption>
+            </figure>
+        </nav>
+    
+        <nav class="portada_desktop_donde">
+            <figure class="configuracion_desktop_recetas">
+                <div><img class="imagen_adaptada" src="../img/portada_recetas_desktop.png" alt="portada_recetas_desktop"></div>
+                <figcaption class="textos_portada_recetas">
+                    <div><h1 class="titulo_recetas">¿Te tentaste?</h1></div>
+                    <div><h2 class="subtitulo_recetas">Te dejo un mapa con mis lugares favoritos de CABA</h2></div>
+                </figcaption>
+            </figure>
+        </nav>
+
+        <nav class="bloque_recomendaciones">
+            <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105110.06315540154!2d-58.507419003867554!3d-34.586723038338185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sempanadas!5e0!3m2!1ses-419!2sit!4v1702460853009!5m2!1ses-419!2sit" width="90%";
+                height="400vh"; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            <nav class="bloque_texto_recomendaciones">
+                <div><h2 class="titulo_recomendaciones">Recomendaciones</h2></div>
+                <div class="invitacion_recomendaciones"><p>¡Toda nueva propuesta es bienvenida!</p>
+                <p>dejame tu recomendación en el formulario de contacto que está en la página “Sobre mí”</p></div>
+            </nav>
+        </nav>
+
+<!-- Armo dos galerías distintas, una para mobile y otra para desktop -->
+        <div class="container-fluid seccion_donde_mobile">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h2 class="titulo_galeria_donde" style="font-size: x-large;">Galeria de Fotos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="donde_fotos">
+                    <div><a class="donde_1"><img src="../img/negocio1.jpg" alt="negocio1"></a></div>
+                    <div><a class="donde_2"><img src="../img/negocio2.jpg" alt="negocio2"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid seccion_donde_desktop">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h2 class="titulo_galeria_donde" style="font-size: x-large;">Galeria de Fotos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="donde_fotos">
+                    <div><a class="donde_1"><img src="../img/negocio1.jpg" alt="negocio1"></a></div>
+                    <div><a class="donde_2"><img src="../img/negocio2.jpg" alt="negocio2"></a></div>
+                    <div><a class="donde_3"><img src="../img/negocio3.jpg" alt="negocio3"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Armo el footer con las clases de Bootstrap -->
+<!-- Armo dos footers distintos, uno para mobile y otro para desktop -->
+<footer>
+    <nav class="footer_mobile">
+        <div class="container-fluid text-align">
+            <div class="row">
+                <div class="col align-self-center">
+                    <ul>
+                        <div>
+                            <div><li class="titulo"><h2>¡Encontrémonos!</h2></li></div>
+                            <div>
+                                <div class="redes">
+                                    <li><a href="https://www.instagram.com/triana.giraldi/" target="_blank"><img class="footer_logos" src="../img/logo_instagram.png" alt="logo_instagram"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/triana-giraldi/" target="_blank"><img class="footer_logos" src="../img/logo_linkedin.png" alt="logo_linkedin"></a></li>
+                                    <li><a href="https://trianagiraldi.wixsite.com/portfolio" target="_blank"><img class="footer_logos" src="../img/logo_web.png" alt="logo_web"></a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="logo"><img class="footer_foto align-self-center" src="../img/logo_footer2.png" alt="logo_footer"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="footer_desktop">
+        <div>
+            <div class="row">
+                <div class="col align-self-center titulo"><h2 class="encontremonos">¡Encontrémonos!</h2></div>
+                <div class="col align-self-center">
+                    <nav class="conjunto_footer_desktop">
+                        <ul>
+                            <div class="redes">
+                                <li><a href="https://www.instagram.com/triana.giraldi/" target="_blank"><img class="footer_logos" src="../img/logo_instagram.png" alt="logo_instagram"></a></li>
+                                <li><a href="https://www.linkedin.com/in/triana-giraldi/" target="_blank"><img class="footer_logos" src="../img/logo_linkedin.png" alt="logo_linkedin"></a></li>
+                                <li><a href="https://trianagiraldi.wixsite.com/portfolio" target="_blank"><img class="footer_logos" src="../img/logo_web.png" alt="logo_web"></a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col">
+                    <div class="logo"><img class="footer_foto align-self-center" src="../img/logo_footer2.png" alt="logo_footer"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+<!-- Copio el script de JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>

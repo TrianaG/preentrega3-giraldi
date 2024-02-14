@@ -1,0 +1,295 @@
+/*------------------------------------------------- BÁSICOS -----------------------------------------------------*/
+
+header{
+    nav{
+        figure{
+            display: none;
+        }
+    }
+}
+
+main{
+    nav{
+        div{
+            div{
+                .el_repulgue_desktop{
+                    display: none
+                }
+
+                .conjunto_masa{
+                    background-color: #00A7E1;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+
+                    img{
+                        width: 100vw;
+                    }
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-self: center;
+                        margin-bottom: 1%;
+                        margin-top: 3%;
+                        margin-left: 3%;
+                        margin-right: 3%;
+
+                        h2{
+                            font-family: "Genty";
+                            color: #F15025;
+                            margin-top: 3%;
+                        }
+
+                        p{
+                            font-family: "Bebas";
+                            color: #FFF9A5;
+                        }
+
+                        .el_repulgue{
+                            font-family: "Genty";
+                            color:#00A7E1;
+                            background-color:#FFF9A5;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .texto_basicos3{
+                            font-family: "Bebas";
+                            color:#F15025;
+                            padding-top: 2%;
+                        }
+                    }
+                }
+
+                nav{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 2%;
+                    padding-left: 0.5%;
+                    padding-right: 0.5%;
+
+                    h1{
+                        display: block;
+                        font-family: "Genty";
+                        color: #F15025;
+                        font-size: xx-large;
+                    }
+
+                    p{
+                        font-family: "Bebas";
+                        color: #00A7E1;
+                        padding: 0;
+                        font-size: larger;
+                    }
+
+                    div{
+                        h1{
+                            display: block;
+                            font-family: "Genty";
+                            color: #F15025;
+                            padding-top: 3%;
+                        }
+
+                        p{
+                            font-family: "Bebas";
+                            color: #00A7E1;
+                            text-align: center;
+                            padding-left: 3%;
+                            padding-right: 3%;
+                            background-color: #FFF9A5;
+                            margin: 0;
+                            width: 100vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------------------------------- MEDIA QUERY BÁSICOS -----------------------------------------------*/
+/*------------------------------------------------- TABLET ------------------------------------------------------*/
+@media screen and (min-width:768px){
+    main{
+        nav{
+            margin: 0;
+            padding: 0;
+            div{
+                margin: 0;
+                padding: 0;
+                div{
+                    margin: 0;
+                    padding: 0;
+                    nav{
+                        div{
+                            margin: 0;
+                            padding: 0;
+                            h1{
+                                font-family: "Genty";
+                                color: #F15025; 
+                            }
+                
+                            p{
+                                margin: 0;
+                                padding: 0;
+                                width: 100vw;
+                            }
+                        }
+                    }
+                    div{
+                        div{
+                            h2{
+                                color: #F15025;
+                                background-color: #00A7E1;
+                            }
+                        }
+                    }
+                }
+
+                footer{
+                    nav{
+                        div{
+                            div{
+                                div{
+                                    nav{
+                                        ul{
+                                            div{
+                                                li{
+                                                    a{
+                                                        img{
+                                                            width: 30px;
+                                                            height: 30px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------- DESKTOP -----------------------------------------------------*/
+
+@media screen and (min-width:1024px){
+    header{
+        nav{
+            figure{
+                display: block;
+                margin: 0;
+                position: relative;
+
+                .texto_principal_basicos{
+                    position: absolute;
+                    background-color: #FFF9A5;
+                    width: 45%;
+                    height: auto;
+                    top: 25%;
+                    bottom: 25%;
+                    left: 2%;
+
+
+                    div{
+                        h1{
+                            font-family: "Genty";
+                            padding-top: 3%;
+                            color: #F15025;
+                            margin: 0;
+                        }
+
+                        p{
+                            color: #00A7E1;
+                            margin-bottom: 2%;
+                            margin:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        nav{
+            div{
+                div{
+                    .portada_basicos_mobile{
+                        display: none;
+                    }
+
+                    .texto_principal_basicos_mobile{
+                        display: none;
+                    }
+
+                    .conjunto_repulgue{
+                        padding-left: 2%;
+                        margin: 0;
+                        padding-top: 2%;
+                        padding-bottom: 2%;
+                        gap: 1%;
+                    }
+
+                    div{
+                        flex-direction: row;
+                        align-items: center;
+                        justify-items: center;
+                        padding-right: 2%;
+
+                        .texto_repulgue_basicos{
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        div{
+                            margin: 0;
+
+                            .texto_basicos3{
+                                padding: 0;
+                                margin: 0;
+                            }
+
+                            nav{
+                                img{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    nav{
+                        padding: 0;
+                        margin: 0;
+                        nav{
+                            flex-direction: row;
+                            align-items: center;
+                            justify-items: center;
+                            padding-left: 2%;
+                        }
+
+                        img{
+                            max-width: 500px
+                        }
+                    }
+
+                    .el_repulgue_desktop{
+                        display: block;
+                        max-width: 500px;
+                    }
+                
+                    .el_repulgue_mobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

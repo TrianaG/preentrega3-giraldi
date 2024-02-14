@@ -1,0 +1,332 @@
+/*------------------------------------------------- INDEX -----------------------------------------------------*/
+
+header{
+    nav{
+        .imagen_desktop{
+            display: none;
+        }
+    }
+}
+
+main{
+    .recetas_main_tablet{
+        display: none;
+    }
+
+    .recetas_main_desktop{
+        display: none;
+    }
+
+    .seccion_donde_desktop{
+        display: none;
+    }
+
+    .donde_fotos{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        gap: 3%;
+        justify-content: center;
+    }
+
+    .seccion_empanadas{
+        background-color: #00A7E1;
+        font-family: "Bebas";
+        color: #FFF9A5;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        img{
+            width:100%;
+        }
+    }
+
+    div{
+        .seccion_recetas{
+            background-color:#F15025;
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        div{
+            h1{
+                display: none;
+            }
+
+            .recetas_main{
+                h2{
+                    background-color: #00A7E1;
+                    width: 25vw;
+                    align-self: center;
+                }
+            }
+
+            nav{                
+                div{
+                    display: flex;
+                    justify-content:center;
+                    padding: 1rem;
+                    gap: 1rem;
+                }
+                .seccion_recetas_empanadas{
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            nav{
+                nav{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    h2{
+                        display: inline-block;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 0.5rem;
+                        font-family: "Genty";
+                        color: #FFF9A5;
+                        text-align: center;
+                        font-size: x-large;
+                    }
+                    div{
+                        a{
+                            img{
+                                max-width: 10rem;
+                                width: 90vh;
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                .index_donde_titulo{
+                    display: inline-block;
+                    background-color:#F15025;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 0.5rem;
+                    font-family: "Genty";
+                    color:#00A7E1;
+                    text-align: center;
+                    font-size: x-large;
+                }
+                div{
+                    .titulo_empanadas_main{
+                        display: inline-block;
+                        background-color: #F15025;
+                        width: 33vw;
+                        align-self: center;
+                        margin-bottom: 0;
+                    }
+                    div{
+                        h2{
+                            display: inline-block;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            padding-top: 0.5rem;
+                            font-family: "Genty";
+                            color: #FFF9A5;
+                            text-align: center;
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        nav{
+            div{
+                list-style: none;
+            }
+        }
+    }
+}
+
+footer{
+    nav{
+        div{
+            div{
+                .col{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------- MEDIA QUERY INDEX ------------------------------------------------*/
+/*------------------------------------------------- TABLET ------------------------------------------------------*/
+
+@media screen and (min-width:768px){
+
+    main{
+        .recetas_main_mobile{
+            display: none;
+        }
+
+        .recetas_main_tablet{
+            display: block;
+        }
+
+        .seccion_donde_mobile{
+            display: none;
+        }
+
+        .seccion_donde_desktop{
+            display: block;
+        }
+
+        div{
+            div{
+                div{
+
+                    h2{
+                        font-family: "Genty";
+                        color: #00A7E1 ;
+                    }
+
+                    .donde_titulo_main{
+                        display: inline-block;
+                        background-color:#F15025;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 0.5rem;
+                        font-family: "Genty";
+                        color:#00A7E1;
+                        text-align: center;
+                        font-size: x-large;
+                    }
+                }
+
+                .donde_fotos{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    gap: 1rem;
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+        nav{
+            .seccion_donde_desktop{
+                div{
+                    div{
+                        h2{
+                            background-color:#F15025;
+                            width: 15vw;
+                        }
+                    }
+                }
+            }
+            div{
+                list-style: none;
+                div{
+                    padding: 1rem;
+                    nav{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer_mobile{
+            display: none;
+        }
+
+        nav{
+            .footer_mobile{
+                display: none;
+            }
+            div{
+                div{
+                    div{
+                        nav{
+                            ul{
+                                div{
+                                    li{
+                                        a{
+                                            img{
+                                                width: 25px;
+                                                height: 25px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------ DESKTOP ------------------------------------------------------*/
+
+@media screen and (min-width:1024px){
+
+    header{
+        nav{
+            .imagen_mobile{
+                display: none;
+            }
+
+            .imagen_desktop{
+                display: block;
+            }
+        }
+    }
+
+    main{
+        .recetas_main_tablet{
+            display: none;
+        }
+
+        .recetas_main_desktop{
+            display: block;
+        }
+
+        div{
+            div{
+                .recetas_main{
+                    h2{
+                        width: 15vw;
+                    }
+                div{
+                    h2{
+                        display: inline-block;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-top: 0.5rem;
+                        font-family: "Genty";
+                        color:#00A7E1;
+                        text-align: center;
+                        font-size: x-large;
+                    }
+                    div{
+                        .titulo_empanadas_main{
+                            width: 10vw;
+                        }
+                    }
+
+                .donde_fotos{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    gap: 1rem;
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+    }
+}
+}
+}

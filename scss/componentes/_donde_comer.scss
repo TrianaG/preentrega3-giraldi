@@ -1,0 +1,174 @@
+/*---------------------------------------------- ¿DÓNDE COMER? --------------------------------------------------*/
+
+main{
+    .portada_desktop_donde{
+        display: none;
+    }
+
+    nav{
+        figure{
+            display: block;
+            margin: 0;
+            position: relative;
+            figcaption{
+                display: flex;
+                flex-direction: column;
+                gap: 1%;
+                position: absolute;
+                top: 34%;
+                bottom: 10%;
+                left: 2%;
+                right: 2%;
+                div{
+                    h1{
+                        display: inline-block;
+                        font-family: "Genty";
+                        background-color: #FFF9A5;
+                        color: #00A7E1;
+                        align-self: center;
+                        padding-left: 2%;
+                        padding-right: 2%;
+                        font-size: 6vw;
+                    }
+                    h2{
+                        display: inline-block;
+                        font-family: "Bebas";
+                        color: #FFF9A5;
+                        font-size: x-large;
+                        padding-left: 1%;
+                        padding-right: 1%;
+                        font-size: 5vw;
+                    }
+                    .subtitulo_recetas{
+                        background-color: #F15025;
+                    }
+                }
+            }
+        }
+
+        nav{
+            .titulo_recomendaciones{
+                color: #00A7E1;
+                font-family: "Genty";
+                font-size: xx-large;
+                padding-top: 5%;
+            }
+
+            .invitacion_recomendaciones{
+                display: inline-block;
+                background-color: #F15025;
+                color: #FFF9A5;
+                font-family: "Bebas";
+                font-size: x-large;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    .mapa{
+        margin-top: 5%;
+    }
+
+    div{
+        div{
+            .titulo_galeria_donde{
+                display: inline-block;
+                background-color: #00A7E1;
+                color: #FFF9A5;
+                font-family: "Genty";
+                margin-top: 25px;
+                margin-bottom: 25px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/*---------------------------------------- MEDIA QUERY ¿DÓNDE COMER? --------------------------------------------*/
+/*------------------------------------------------ DESKTOP ------------------------------------------------------*/
+@media screen and (min-width:1024px){
+
+
+    main{
+        .portada_mobile_donde{
+            display: none;
+        }
+    
+        .portada_desktop_donde{
+            display: block;
+        }
+
+        .mapa{
+            width: 90%;
+        }
+
+        .bloque_texto_recomendaciones{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .bloque_recomendaciones{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav{
+            figure{
+                display: block;
+                margin: 0;
+                position: relative;
+                figcaption{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1%;
+                    position: absolute;
+                    top: 34%;
+                    bottom: 10%;
+                    left: 2%;
+                    right: 2%;
+                    div{
+                        h1{
+                            display: inline-block;
+                            font-family: "Genty";
+                            background-color: #FFF9A5;
+                            color: #00A7E1;
+                            align-self: center;
+                            padding-left: 2%;
+                            padding-right: 2%;
+                            font-size: 3vw;
+                        }
+                        h2{
+                            display: inline-block;
+                            font-family: "Bebas";
+                            color: #FFF9A5;
+                            font-size: x-large;
+                            padding-left: 1%;
+                            padding-right: 1%;
+                            font-size: 2vw;
+                        }
+                        .subtitulo_recetas{
+                            background-color: #F15025;
+                        }
+                    }
+                }
+            }
+        }
+        div{
+            div{
+                .titulo_galeria_donde{
+                    display: inline-block;
+                    background-color: #00A7E1;
+                    color: #FFF9A5;
+                    font-family: "Genty";
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1097 @@
+@charset "UTF-8";
+/* Tipografías */
+@font-face {
+  font-family: "Genty";
+  src: url(../fonts/GENTYDEMO-REGULAR.OTF);
+}
+@font-face {
+  font-family: "Bebas";
+  src: url(../fonts/BEBASNEUE-REGULAR.OTF);
+}
+/* Configuración para toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #FFF9A5;
+  text-align: center;
+}
+
+.imagen_adaptada {
+  width: 100vw;
+}
+
+.cuadrado_rojo {
+  background-color: #F15025;
+  color: #FFF9A5;
+  font-family: "Bebas";
+  list-style: none;
+  padding: 2%;
+}
+
+.cuadrado_azul {
+  background-color: #00A7E1;
+  color: #FFF9A5;
+  font-family: "Bebas";
+  list-style: none;
+  padding: 2%;
+}
+
+.cuadrado_amarillo {
+  background-color: #FFF9A5;
+  font-family: "Bebas";
+  list-style: none;
+  padding: 2%;
+}
+
+.letra_receta_azul {
+  color: #00A7E1;
+  font-family: "Bebas";
+}
+
+.letra_receta_rojo {
+  color: #F15025;
+  font-family: "Bebas";
+}
+
+.letra_receta_amarillo {
+  color: #FFF9A5;
+  font-family: "Bebas";
+}
+
+.titulo_recetas_rojo {
+  font-family: "Genty";
+  color: #F15025;
+}
+
+.titulo_recetas_azul {
+  font-family: "Genty";
+  color: #00A7E1;
+}
+
+/* Configuraciones estéticas para los links*/
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFF9A5;
+}
+
+a:focus {
+  color: #00A7E1;
+}
+
+a:active {
+  color: #00A7E1;
+}
+
+/*Configuro el header Mobile First*/
+header {
+  font-family: "Bebas";
+  color: #FFF9A5;
+  background-color: #F15025;
+}
+header .subrayado {
+  text-decoration: underline;
+}
+header nav .navbar {
+  color: #F15025;
+}
+header nav div .imagen_desktop {
+  display: none;
+}
+header nav nav div ul li a {
+  color: #FFF9A5;
+  font-family: "Bebas";
+  font-size: x-large;
+}
+header nav nav div nav a img {
+  width: 100%;
+  height: auto;
+}
+header nav div img {
+  width: 100%;
+  height: auto;
+}
+header nav a img {
+  width: 14rem;
+  height: auto;
+}
+header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 167, 225, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header .navbar-toggler {
+  border-color: #00A7E1;
+}
+@media screen and (min-width: 1024px) {
+  header .menu_mobile {
+    display: none;
+  }
+  header .menu_desktop {
+    display: block;
+  }
+  header nav .menu_mobile {
+    display: none;
+  }
+  header nav .menu_desktop {
+    display: block;
+  }
+  header nav nav div div a {
+    font-size: x-large;
+    color: #FFF9A5;
+    font-family: "Bebas";
+  }
+  header nav div .imagen_desktop {
+    display: block;
+  }
+  header nav div .imagen_mobile {
+    display: block;
+  }
+}
+
+/*Configuro el footer*/
+footer {
+  background-color: #F15025;
+}
+footer .footer_desktop {
+  display: none;
+}
+footer nav div div div ul div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer nav div div div ul div li h2 {
+  font-family: "Bebas";
+  color: #00A7E1;
+}
+footer nav div div div ul div div li {
+  list-style: none;
+}
+footer nav div div div ul div div li a img {
+  width: 30px;
+  height: 30px;
+}
+footer nav div div div ul div div div {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+  list-style: none;
+  gap: 1rem;
+}
+footer nav div div div div {
+  justify-self: center;
+  align-self: center;
+}
+footer nav div div div div img {
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer_desktop {
+    display: block;
+  }
+  footer .footer_mobile {
+    display: none;
+  }
+  footer nav .footer_mobile {
+    display: none;
+  }
+  footer nav div div div h2 {
+    font-family: "Bebas";
+    color: #00A7E1;
+  }
+  footer nav div div div nav ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "titulo redes logo";
+  }
+  footer nav div div div nav ul div {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    list-style: none;
+    gap: 4rem;
+  }
+  footer nav div div div nav ul div li a img {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*--------------------------------------- Configuración de cada página ------------------------------------------*/
+/*------------------------------------------------- INDEX -----------------------------------------------------*/
+header nav .imagen_desktop {
+  display: none;
+}
+
+main .recetas_main_tablet {
+  display: none;
+}
+main .recetas_main_desktop {
+  display: none;
+}
+main .seccion_donde_desktop {
+  display: none;
+}
+main .donde_fotos {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 3%;
+  justify-content: center;
+}
+main .seccion_empanadas {
+  background-color: #00A7E1;
+  font-family: "Bebas";
+  color: #FFF9A5;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+main .seccion_empanadas img {
+  width: 100%;
+}
+main div .seccion_recetas {
+  background-color: #F15025;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+main div div h1 {
+  display: none;
+}
+main div div .recetas_main h2 {
+  background-color: #00A7E1;
+  width: 25vw;
+  align-self: center;
+}
+main div div nav div {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+main div div nav .seccion_recetas_empanadas {
+  display: flex;
+  flex-direction: row;
+}
+main div div nav nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+main div div nav nav h2 {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-family: "Genty";
+  color: #FFF9A5;
+  text-align: center;
+  font-size: x-large;
+}
+main div div nav nav div a img {
+  max-width: 10rem;
+  width: 90vh;
+}
+main div div div .index_donde_titulo {
+  display: inline-block;
+  background-color: #F15025;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-family: "Genty";
+  color: #00A7E1;
+  text-align: center;
+  font-size: x-large;
+}
+main div div div div .titulo_empanadas_main {
+  display: inline-block;
+  background-color: #F15025;
+  width: 33vw;
+  align-self: center;
+  margin-bottom: 0;
+}
+main div div div div div h2 {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-family: "Genty";
+  color: #FFF9A5;
+  text-align: center;
+  font-size: x-large;
+}
+main div nav div {
+  list-style: none;
+}
+
+footer nav div div .col {
+  width: 50%;
+}
+
+/*-------------------------------------------- MEDIA QUERY INDEX ------------------------------------------------*/
+/*------------------------------------------------- TABLET ------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  main .recetas_main_mobile {
+    display: none;
+  }
+  main .recetas_main_tablet {
+    display: block;
+  }
+  main .seccion_donde_mobile {
+    display: none;
+  }
+  main .seccion_donde_desktop {
+    display: block;
+  }
+  main div div div h2 {
+    font-family: "Genty";
+    color: #00A7E1;
+  }
+  main div div div .donde_titulo_main {
+    display: inline-block;
+    background-color: #F15025;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    font-family: "Genty";
+    color: #00A7E1;
+    text-align: center;
+    font-size: x-large;
+  }
+  main div div .donde_fotos {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  main nav .seccion_donde_desktop div div h2 {
+    background-color: #F15025;
+    width: 15vw;
+  }
+  main nav div {
+    list-style: none;
+  }
+  main nav div div {
+    padding: 1rem;
+  }
+  main nav div div nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  footer .footer_mobile {
+    display: none;
+  }
+  footer nav .footer_mobile {
+    display: none;
+  }
+  footer nav div div div nav ul div li a img {
+    width: 25px;
+    height: 25px;
+  }
+}
+/*------------------------------------------------ DESKTOP ------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  header nav .imagen_mobile {
+    display: none;
+  }
+  header nav .imagen_desktop {
+    display: block;
+  }
+  main .recetas_main_tablet {
+    display: none;
+  }
+  main .recetas_main_desktop {
+    display: block;
+  }
+  main div div .recetas_main h2 {
+    width: 15vw;
+  }
+  main div div .recetas_main div h2 {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    font-family: "Genty";
+    color: #00A7E1;
+    text-align: center;
+    font-size: x-large;
+  }
+  main div div .recetas_main div div .titulo_empanadas_main {
+    width: 10vw;
+  }
+  main div div .recetas_main div .donde_fotos {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+/*------------------------------------------------- BÁSICOS -----------------------------------------------------*/
+header nav figure {
+  display: none;
+}
+
+main nav div div .el_repulgue_desktop {
+  display: none;
+}
+main nav div div .conjunto_masa {
+  background-color: #00A7E1;
+}
+main nav div div div {
+  display: flex;
+  flex-direction: column;
+}
+main nav div div div img {
+  width: 100vw;
+}
+main nav div div div div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+main nav div div div div h2 {
+  font-family: "Genty";
+  color: #F15025;
+  margin-top: 3%;
+}
+main nav div div div div p {
+  font-family: "Bebas";
+  color: #FFF9A5;
+}
+main nav div div div div .el_repulgue {
+  font-family: "Genty";
+  color: #00A7E1;
+  background-color: #FFF9A5;
+  padding: 0;
+  margin: 0;
+}
+main nav div div div div .texto_basicos3 {
+  font-family: "Bebas";
+  color: #F15025;
+  padding-top: 2%;
+}
+main nav div div nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+main nav div div nav h1 {
+  display: block;
+  font-family: "Genty";
+  color: #F15025;
+  font-size: xx-large;
+}
+main nav div div nav p {
+  font-family: "Bebas";
+  color: #00A7E1;
+  padding: 0;
+  font-size: larger;
+}
+main nav div div nav div h1 {
+  display: block;
+  font-family: "Genty";
+  color: #F15025;
+  padding-top: 3%;
+}
+main nav div div nav div p {
+  font-family: "Bebas";
+  color: #00A7E1;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #FFF9A5;
+  margin: 0;
+  width: 100vw;
+}
+
+/*------------------------------------------- MEDIA QUERY BÁSICOS -----------------------------------------------*/
+/*------------------------------------------------- TABLET ------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  main nav {
+    margin: 0;
+    padding: 0;
+  }
+  main nav div {
+    margin: 0;
+    padding: 0;
+  }
+  main nav div div {
+    margin: 0;
+    padding: 0;
+  }
+  main nav div div nav div {
+    margin: 0;
+    padding: 0;
+  }
+  main nav div div nav div h1 {
+    font-family: "Genty";
+    color: #F15025;
+  }
+  main nav div div nav div p {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  main nav div div div div h2 {
+    color: #F15025;
+    background-color: #00A7E1;
+  }
+  main nav div footer nav div div div nav ul div li a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*------------------------------------------------- DESKTOP -----------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  header nav figure {
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+  header nav figure .texto_principal_basicos {
+    position: absolute;
+    background-color: #FFF9A5;
+    width: 45%;
+    height: auto;
+    top: 25%;
+    bottom: 25%;
+    left: 2%;
+  }
+  header nav figure .texto_principal_basicos div h1 {
+    font-family: "Genty";
+    padding-top: 3%;
+    color: #F15025;
+    margin: 0;
+  }
+  header nav figure .texto_principal_basicos div p {
+    color: #00A7E1;
+    margin-bottom: 2%;
+    margin: 0;
+  }
+  main nav div div .portada_basicos_mobile {
+    display: none;
+  }
+  main nav div div .texto_principal_basicos_mobile {
+    display: none;
+  }
+  main nav div div .conjunto_repulgue {
+    padding-left: 2%;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 1%;
+  }
+  main nav div div div {
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding-right: 2%;
+  }
+  main nav div div div .texto_repulgue_basicos {
+    margin: 0;
+    padding: 0;
+  }
+  main nav div div div div {
+    margin: 0;
+  }
+  main nav div div div div .texto_basicos3 {
+    padding: 0;
+    margin: 0;
+  }
+  main nav div div div div nav img {
+    display: block;
+  }
+  main nav div div nav {
+    padding: 0;
+    margin: 0;
+  }
+  main nav div div nav nav {
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding-left: 2%;
+  }
+  main nav div div nav img {
+    max-width: 500px;
+  }
+  main nav div div .el_repulgue_desktop {
+    display: block;
+    max-width: 500px;
+  }
+  main nav div div .el_repulgue_mobile {
+    display: none;
+  }
+}
+/*-------------------------------------------------- RECETAS ----------------------------------------------------*/
+header .portada_mobile_recetas {
+  display: block;
+}
+header .portada_desktop_recetas {
+  display: none;
+}
+
+main div .portada_desktop_recetas {
+  display: none;
+}
+main div .portada_desktop_recetas .recetas_titulo_tablet_rojo {
+  display: none;
+}
+main div .portada_desktop_recetas .recetas_titulo_tablet_azul {
+  display: none;
+}
+main div div {
+  padding: 0;
+  margin: 0;
+}
+main div div .portada_desktop_recetas {
+  display: none;
+  width: 200px;
+  height: 200px;
+}
+main div nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+main div nav div .receta_empanada_tablet_desktop {
+  display: none;
+}
+main div nav div nav div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+main div nav div nav div div .foto_desktop_receta {
+  display: none;
+}
+main div nav div nav div .azul {
+  color: #00A7E1;
+}
+main div nav div nav div .rojo {
+  color: #F15025;
+}
+main div nav div nav div h2 {
+  font-family: "Genty";
+  margin: 0;
+  padding: 0;
+}
+main div nav .foto_desktop_izquierda {
+  display: none;
+}
+main div figure {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+main div figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  position: absolute;
+  top: 34%;
+  bottom: 10%;
+  left: 2%;
+  right: 2%;
+}
+main div figure figcaption div h1 {
+  display: inline-block;
+  font-family: "Genty";
+  background-color: #FFF9A5;
+  color: #00A7E1;
+  align-self: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 6vw;
+}
+main div figure figcaption div h2 {
+  display: inline-block;
+  font-family: "Bebas";
+  color: #FFF9A5;
+  font-size: x-large;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 5vw;
+}
+
+/*------------------------------------------- MEDIA QUERY RECETAS -----------------------------------------------*/
+/*------------------------------------------------- TABLET ------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+  main div nav .bloque_receta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main div nav div .subtitulo_recetas {
+    background-color: #F15025;
+  }
+  main div nav div .portada_desktop_recetas {
+    display: block;
+  }
+  main div nav div .foto_recetas_mobile {
+    display: none;
+  }
+  main div nav div .receta_empanada_tablet_desktop {
+    display: block;
+    padding-top: 3%;
+  }
+  main div nav div div .foto_desktop_izquierda {
+    display: block;
+  }
+  main div nav div nav div nav div div h2 {
+    background-color: none;
+  }
+}
+/*------------------------------------------------- DESKTOP ------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  header .portada_mobile_recetas {
+    display: none;
+  }
+  header .portada_desktop_recetas {
+    display: block;
+  }
+  header .titulo_recetas {
+    background-color: #FFF9A5;
+  }
+  header nav figure {
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+  header nav figure figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 1%;
+    position: absolute;
+    top: 34%;
+    bottom: 10%;
+    left: 2%;
+  }
+  header nav figure figcaption div h1 {
+    display: inline-block;
+    font-family: "Genty";
+    color: #00A7E1;
+    align-self: center;
+    font-size: 3vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 45vw;
+  }
+  header nav figure figcaption div h2 {
+    display: inline-block;
+    font-family: "Bebas";
+    color: #FFF9A5;
+    background-color: #F15025;
+    font-size: x-large;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 2vw;
+    width: 30vw;
+  }
+  main .portada_desktop_recetas {
+    display: block;
+  }
+  main .portada_mobile_recetas {
+    display: none;
+  }
+  main .titulo_y_texto_recetas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  main .bloque_receta {
+    display: flex;
+    align-items: center;
+  }
+  main div nav .bloque_receta {
+    flex-direction: row;
+    align-items: center;
+  }
+  main div nav div .foto_desktop_izquierda {
+    display: block;
+  }
+  main div nav div nav div div .tamaño_titulo {
+    font-size: 3vw;
+  }
+  main nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  main nav div .receta_empanada_tablet_desktop {
+    display: block;
+  }
+  main nav div div .foto_desktop_receta {
+    width: 200px;
+    height: 200px;
+  }
+  main nav div nav div .azul {
+    color: #00A7E1;
+  }
+  main nav div nav div .rojo {
+    color: #F15025;
+  }
+  main nav div nav div h2 {
+    font-family: "Genty";
+    margin: 0;
+    padding: 0;
+  }
+}
+/*---------------------------------------------- ¿DÓNDE COMER? --------------------------------------------------*/
+main .portada_desktop_donde {
+  display: none;
+}
+main nav figure {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+main nav figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  position: absolute;
+  top: 34%;
+  bottom: 10%;
+  left: 2%;
+  right: 2%;
+}
+main nav figure figcaption div h1 {
+  display: inline-block;
+  font-family: "Genty";
+  background-color: #FFF9A5;
+  color: #00A7E1;
+  align-self: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 6vw;
+}
+main nav figure figcaption div h2 {
+  display: inline-block;
+  font-family: "Bebas";
+  color: #FFF9A5;
+  font-size: x-large;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 5vw;
+}
+main nav figure figcaption div .subtitulo_recetas {
+  background-color: #F15025;
+}
+main nav nav .titulo_recomendaciones {
+  color: #00A7E1;
+  font-family: "Genty";
+  font-size: xx-large;
+  padding-top: 5%;
+}
+main nav nav .invitacion_recomendaciones {
+  display: inline-block;
+  background-color: #F15025;
+  color: #FFF9A5;
+  font-family: "Bebas";
+  font-size: x-large;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+main .mapa {
+  margin-top: 5%;
+}
+main div div .titulo_galeria_donde {
+  display: inline-block;
+  background-color: #00A7E1;
+  color: #FFF9A5;
+  font-family: "Genty";
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+/*---------------------------------------- MEDIA QUERY ¿DÓNDE COMER? --------------------------------------------*/
+/*------------------------------------------------ DESKTOP ------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  main .portada_mobile_donde {
+    display: none;
+  }
+  main .portada_desktop_donde {
+    display: block;
+  }
+  main .mapa {
+    width: 90%;
+  }
+  main .bloque_texto_recomendaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .bloque_recomendaciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main nav figure {
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+  main nav figure figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    position: absolute;
+    top: 34%;
+    bottom: 10%;
+    left: 2%;
+    right: 2%;
+  }
+  main nav figure figcaption div h1 {
+    display: inline-block;
+    font-family: "Genty";
+    background-color: #FFF9A5;
+    color: #00A7E1;
+    align-self: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 3vw;
+  }
+  main nav figure figcaption div h2 {
+    display: inline-block;
+    font-family: "Bebas";
+    color: #FFF9A5;
+    font-size: x-large;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 2vw;
+  }
+  main nav figure figcaption div .subtitulo_recetas {
+    background-color: #F15025;
+  }
+  main div div .titulo_galeria_donde {
+    display: inline-block;
+    background-color: #00A7E1;
+    color: #FFF9A5;
+    font-family: "Genty";
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+}
+/*------------------------------------------------- SOBRE MÍ ----------------------------------------------------*/
+main .portada_desktop_recetas {
+  display: none;
+}
+main .portada_mobile_recetas figure div h2 {
+  font-size: larger;
+}
+main .foto_sobre_mi {
+  width: 100vw;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main nav .texto_sobre_mi {
+  margin: 10px;
+}
+main nav .texto_sobre_mi h2 {
+  font-family: "Genty";
+  color: #00A7E1;
+}
+main nav .texto_sobre_mi p {
+  font-family: "Bebas";
+  color: #FFF9A5;
+}
+main form fieldset input {
+  font-size: larger;
+  text-align: center;
+  background-color: #FFF9A5;
+  border-color: #F15025;
+  border-style: solid;
+  border-width: thin;
+  font-family: "Bebas";
+  color: #F15025;
+}
+main form fieldset textarea {
+  font-size: larger;
+  background-color: #FFF9A5;
+  border-color: #F15025;
+  border-style: solid;
+  border-width: thin;
+  font-family: "Bebas";
+  color: #F15025;
+}
+main form .formulario {
+  margin: 10px;
+  border-color: #F15025;
+  border-style: solid;
+}
+main form .formulario .leyenda_contactame {
+  display: inline-block;
+  margin: 0;
+}
+main form .formulario .botones_formulario {
+  font-family: "Genty";
+  color: #00A7E1;
+  background-color: #F15025;
+  font-size: x-large;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: none;
+}
+main form .formulario .leyenda_formulario {
+  font-family: "Bebas";
+  color: #F15025;
+}
+
+/*------------------------------------------ MEDIA QUERY SOBRE MÍ -----------------------------------------------*/
+/*------------------------------------------------ DESKTOP ------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  main .portada_desktop_recetas {
+    display: block;
+  }
+  main .grupo_sobre_mi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main .texto_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

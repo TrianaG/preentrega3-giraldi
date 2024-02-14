@@ -1,0 +1,111 @@
+/*------------------------------------------------- SOBRE MÍ ----------------------------------------------------*/
+main{
+    .portada_desktop_recetas{
+        display: none;
+    }
+
+    .portada_mobile_recetas{
+        figure{
+            div{
+                h2{
+                    font-size: larger;
+                }
+            }
+        }
+    }
+
+    .foto_sobre_mi{
+        width: 100vw;
+        max-width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        .texto_sobre_mi{
+            margin: 10px;
+            h2{
+                font-family: "Genty";
+                color:#00A7E1;
+            }
+            p{
+                font-family: "Bebas";
+                color:#FFF9A5 ;
+            }
+        }
+    }
+
+    form{
+        fieldset{
+            input{
+                font-size: larger;
+                text-align: center;
+                background-color: #FFF9A5;
+                border-color: #F15025;
+                border-style: solid;
+                border-width: thin;
+                font-family: "Bebas";
+                color: #F15025;
+            }
+
+            textarea{
+                font-size: larger;
+                background-color: #FFF9A5;
+                border-color: #F15025;
+                border-style: solid;
+                border-width: thin;
+                font-family: "Bebas";
+                color: #F15025;
+            }
+        }
+        .formulario{
+            margin: 10px;
+            border-color: #F15025;
+            border-style:solid;
+            .leyenda_contactame{
+                display: inline-block;
+                margin: 0;
+            }
+            
+            .botones_formulario{
+                font-family: "Genty";
+                color:#00A7E1;
+                background-color:#F15025;
+                font-size: x-large;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+                border: none;
+            }
+
+            .leyenda_formulario{
+                font-family: "Bebas";
+                color: #F15025;
+            }
+        }
+    }
+}
+
+/*------------------------------------------ MEDIA QUERY SOBRE MÍ -----------------------------------------------*/
+/*------------------------------------------------ DESKTOP ------------------------------------------------------*/
+@media screen and (min-width:1024px){
+
+    main{
+        .portada_desktop_recetas{
+            display: block;
+        }
+        
+        .grupo_sobre_mi{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .texto_sobre_mi{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+        }
+    }
+}

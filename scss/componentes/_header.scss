@@ -1,0 +1,118 @@
+/*Configuro el header Mobile First*/
+
+header{
+    font-family: "Bebas";
+    color:#FFF9A5 ;
+    background-color: #F15025;
+
+    .subrayado{
+        text-decoration: underline;
+    }
+
+    // Configuro el tamaño del logo y el menú Mobile First //
+    nav{
+        .navbar{
+            color: #F15025;
+        }
+        div{
+            .imagen_desktop{
+            display: none;
+            }
+        }
+
+        nav{
+            div{
+                ul{
+                    li{
+                        a{
+                            color: #FFF9A5;
+                            font-family: "Bebas";
+                            font-size: x-large;
+                        }
+                    }
+                }
+                nav{
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        div{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        a{
+            img{
+                width: 14rem;
+                height: auto;
+            }
+        }
+    }
+
+    // Configuro el menú navbar //
+    
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 167, 225, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+        
+    .navbar-toggler {
+        border-color:  #00A7E1;
+    }
+
+    //------------------------------------------- MEDIA QUERY HEADER ------------------------------------------------//
+    //------------------------------------------------ DESKTOP ------------------------------------------------------//
+
+    @media screen and (min-width:1024px){
+
+        .menu_mobile{
+            display: none;
+        }
+
+        .menu_desktop{
+            display: block;
+        }
+        
+        nav{
+            .menu_mobile{
+                display: none;
+            }
+
+            .menu_desktop{
+                display: block;
+            }
+
+            nav{
+                div{
+                    div{
+                        a{
+                            font-size: x-large;
+                            color: #FFF9A5;
+                            font-family: "Bebas";
+                        }
+                    }
+                }
+            }
+
+            div{
+                .imagen_desktop{
+                display: block;
+                }
+
+                .imagen_mobile{
+                    display: block;
+                    }
+            }
+        }
+
+    }
+}
+
+

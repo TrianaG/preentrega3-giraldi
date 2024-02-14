@@ -1,0 +1,314 @@
+/*-------------------------------------------------- RECETAS ----------------------------------------------------*/
+
+header{
+    .portada_mobile_recetas{
+        display: block;
+    }
+    .portada_desktop_recetas{
+        display: none;
+    }
+}
+
+main{
+    div{
+        .portada_desktop_recetas{
+            display: none;
+
+        .recetas_titulo_tablet_rojo{
+            display: none;
+        }
+
+        .recetas_titulo_tablet_azul{
+            display: none;
+        }
+
+        }
+        div{
+            padding: 0;
+            margin: 0;
+            .portada_desktop_recetas{
+                display: none;
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            div{
+                .receta_empanada_tablet_desktop{
+                    display: none;
+                }
+
+                nav{
+                    div{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+
+                    div{
+                        .foto_desktop_receta{
+                            display: none;
+                        }
+                    }
+                    }
+                    div{
+                        .azul{
+                            color: #00A7E1;
+                        }
+                        .rojo{
+                            color:#F15025;
+                        }
+                        h2{
+                            font-family: "Genty";
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+                .foto_desktop_izquierda{
+                    display: none;
+                }
+            }
+            figure{
+                display: block;
+                margin: 0;
+                position: relative;
+                figcaption{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1%;
+                    position: absolute;
+                    top: 34%;
+                    bottom: 10%;
+                    left: 2%;
+                    right: 2%;
+                    div{
+                        h1{
+                            display: inline-block;
+                            font-family: "Genty";
+                            background-color: #FFF9A5;
+                            color: #00A7E1;
+                            align-self: center;
+                            padding-left: 2%;
+                            padding-right: 2%;
+                            font-size: 6vw;
+                        }
+                        h2{
+                            display: inline-block;
+                            font-family: "Bebas";
+                            color: #FFF9A5;
+                            font-size: x-large;
+                            padding-left: 1%;
+                            padding-right: 1%;
+                            font-size: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+/*------------------------------------------- MEDIA QUERY RECETAS -----------------------------------------------*/
+/*------------------------------------------------- TABLET ------------------------------------------------------*/
+
+@media screen and (min-width:600px){
+
+    main{ 
+        
+        div{
+            nav{
+                .bloque_receta{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                div{
+                    .subtitulo_recetas{
+                        background-color: #F15025;
+                    }
+                    .portada_desktop_recetas{
+                        display: block;
+                    }
+
+                    .foto_recetas_mobile{
+                        display: none;
+                    }
+
+                    .receta_empanada_tablet_desktop{
+                        display: block;
+                        padding-top: 3%;
+                    }
+
+                    div{
+                        .foto_desktop_izquierda{
+                            display: block;
+                        }
+                    }
+
+                    nav{
+                        div{
+                            nav{
+                                div{
+                                    div{
+                                        h2{
+                                            background-color: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------- DESKTOP ------------------------------------------------------*/
+
+@media screen and (min-width:1024px){
+
+    header{
+        .portada_mobile_recetas{
+            display: none;
+        }
+
+        .portada_desktop_recetas{
+            display: block;
+        }
+
+        .titulo_recetas{
+            background-color: #FFF9A5;
+        }
+
+        nav{
+            figure{
+                display: block;
+                margin: 0;
+                position: relative;
+                figcaption{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100vw;
+                    gap: 1%;
+                    position: absolute;
+                    top: 34%;
+                    bottom: 10%;
+                    left: 2%;
+                    div{
+                        h1{
+                            display: inline-block;
+                            font-family: "Genty";
+                            color: #00A7E1;
+                            align-self: center;
+                            font-size: 3vw;
+                            padding-left: 2%;
+                            padding-right: 2%;
+                            width: 45vw;
+                        }
+                        h2{
+                            display: inline-block;
+                            font-family: "Bebas";
+                            color: #FFF9A5;
+                            background-color: #F15025;
+                            font-size: x-large;
+                            padding-left: 1%;
+                            padding-right: 1%;
+                            font-size: 2vw;
+                            width: 30vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .portada_desktop_recetas{
+            display: block;
+        }
+
+        .portada_mobile_recetas{
+            display: none;
+        }
+    
+        .titulo_y_texto_recetas{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+    
+        .bloque_receta{
+            display: flex;
+            align-items: center;
+        }
+
+        div{
+            nav{
+                .bloque_receta{
+                    flex-direction: row;
+                    align-items: center;
+                }
+                div{
+                    .foto_desktop_izquierda{
+                        display: block;
+                    }
+                    nav{
+                        div{
+                            div{
+                                .tamaño_titulo{
+                                    font-size: 3vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            div{
+                .receta_empanada_tablet_desktop{
+                    display: block;
+                }
+                div{
+                    .foto_desktop_receta{
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                }
+                nav{
+                    div{
+                        .azul{
+                            color: #00A7E1;
+                        }
+                        .rojo{
+                            color:#F15025;
+                        }
+                        h2{
+                            font-family: "Genty";
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }

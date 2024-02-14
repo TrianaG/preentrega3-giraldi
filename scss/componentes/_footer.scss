@@ -1,0 +1,116 @@
+/*Configuro el footer*/
+
+footer{
+    background-color: #F15025;
+
+    .footer_desktop{
+        display: none;
+    }
+
+    nav{
+        div{
+            div{
+                div{
+                    ul{
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            li{
+                                h2{
+                                    font-family: "Bebas";
+                                    color: #00A7E1;
+                                }
+                            }
+
+                            div{
+                                li{
+                                    list-style: none;
+                                    a{
+                                        img{
+                                            width: 30px;
+                                            height: 30px;
+                                        }
+                                    }
+                                }
+                                div{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-self: center;
+                                    align-self: center;
+                                    list-style: none;
+                                    gap: 1rem;
+                                }
+                            }
+                        }
+                    }
+                    div{
+                        justify-self: center;
+                        align-self: center;
+                        img{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+    //------------------------------------------- MEDIA QUERY FOOTER ------------------------------------------------//
+    //-------------------------------------------- TABLET Y DESKTOP--------------------------------------------------//
+    
+    @media screen and (min-width:768px){
+
+        .footer_desktop{
+            display: block;
+        }
+
+        .footer_mobile{
+            display: none;
+        }
+
+        nav{
+            .footer_mobile{
+                display: none;
+            }
+            div{
+                div{
+                    div{
+                        h2{
+                            font-family: "Bebas";
+                            color: #00A7E1;
+                        }
+                        nav{
+                            ul{
+                                grid-template-columns: repeat(3, 1fr);
+                                grid-template-rows: 1fr;
+                                grid-template-areas: 
+                                "titulo redes logo";
+                                div{
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-self: center;
+                                    align-self: center;
+                                    list-style: none;
+                                    gap: 4rem;
+                                    li{
+                                        a{
+                                            img{
+                                                list-style: none;
+                                                width: 30px;
+                                                height: 30px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
